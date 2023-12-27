@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center reg">Registration</h1>
+        <form id="registrationForm">
+            <div class="form first">
+                <div class="details personal">
+                    <div class="fields row">
+                        <div class="col-md-6">
+                            <div class="input-field">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" class="form-control" placeholder="Enter Your name"
+                                    >
+                                <div class="error" id="fullNameError"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="input-field">
+                                <label for="dob">Date of birth</label>
+                                <input type="date" id="dob" class="form-control" placeholder="Enter Your date of birth"
+                                    >
+                                <div class="error" id="dobError"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="input-field">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="Enter Your email"
+                                    >
+                                <div class="error" id="emailError"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="input-field">
+                                <label for="mobileNumber">Mobile Number</label>
+                                <input type="tel" id="mobileNumber" class="form-control"
+                                    placeholder="Enter Your Number" >
+                                <div class="error" id="mobileNumberError"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="input-field">
+                                <label for="gender">Select Gender</label><br>
+                                Male <input type="radio" name="gender">
+                                Female <input type="radio" name="gender">
+                                Others <input type="radio" name="gender">
+                                <div class="error" id="genderError"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="input-field">
+                                <label for="occupation">About Your self</label>
+                                <input type="text" id="occupation" class="form-control"
+                                    placeholder="Enter Your Occupation" >
+                                <div class="error" id="occupationError"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details Id">
+                    <!-- <span class="title">Identity Details</span> -->
+
+                    <div class="fields row">
+                        <!-- Add Bootstrap classes for layout -->
+                        <div class="col-md-6">
+                          <div class="input-field">
+                            <label>Select Your Known language</label>
+                          <div>
+                            <input type="checkbox" name="idType" value="Java"> Java
+                            <input type="checkbox" name="idType" value="python"> Python
+                            <input type="checkbox" name="idType" value="html"> Html
+                          </div>
+                          <div class="error" id="idTypeError"></div>
+                        </div>
+                    </div>
+                        <div class="col-md-6">
+                          <div class="input-field">
+                            <label>Currently</label>
+                          <div>
+                              <input type="radio" name="currently" value="worker" > Worker
+                              <input type="radio" name="currently" value="student" > Student
+                          </div>
+                        <div class="error" id="currentlyRadioError"></div>
+                  </div>
+                </div>
+
+
+                        <div class="col-md-6">
+                          <div class="input-field">
+                            <label for="courseSelect">Select Course</label>
+                            <select id="courseSelect" class="form-control" >
+                              <option value="" disabled selected>Select Course</option>
+                              <option value="Python">Python</option>
+                              <option value="Java">Java</option>
+                              <option value="React">React</option>
+                            </select>
+                          </div>
+                          <div class="error" id="courseSelectError"></div>
+                        </div>
+
+
+
+                        <div class="col-md-6">
+                          <div class="input-field">
+                            <label for="issuedState">Skill Range</label>
+                            <input type="range" id="issuedState" class="form-control" min="0" max="100" step="1" value="50" >
+                            <div class="error" id="issuedStateError"></div>
+                          </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="input-field">
+                                <label for="issuedDate">Certificate Issued Date</label>
+                                <input type="date" id="issuedDate" class="form-control" placeholder="Enter Issued Date"
+                                    >
+                                <div class="error" id="issuedDateError"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="input-field">
+                            <label for="address">Address</label>
+                            <textarea id="address" class="form-control" placeholder="Enter Address" ></textarea>
+                            <div class="error" id="addressError"></div>
+                          </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="validateForm()" id="form-btn">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
